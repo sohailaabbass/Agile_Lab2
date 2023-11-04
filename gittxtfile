@@ -1,0 +1,65 @@
+----------------
+| Git Commands |
+----------------
+1. Configure username and email
+ - git config --global user.name "[NAME]" (Set Username)
+ - git config --global user.email "[EMAIL]" (Set Email)
+ - git config --global user.name (View Username)
+ - git config --global user.email (View Email)
+2. Initialize a Git Repo
+ - git init
+3. Git Files Status
+ - git status
+4. Add File to Repo / Include File in the Next Commit / Add File to Staging Area
+ - git add [FILE_NAME]
+ - git add .
+5. Commit the Changes
+ - git commit -m "[MESSAGE]"
+6. Push to GitHub
+ - git push (Push after Commit)
+ - git push origin [BRANCH_NAME] (Push a New Branch)
+7. Unstage Files (Remove from Staging Area, Reverse-Add)
+ - git restore --staged [FILE_NAME] (Keep Modifications)
+ - git restore [FILE_NAME] (Discard Modifications)
+8. View Commit History
+ - git log (All Previous Commits)
+ - git log -p -[X] (Last X commits)
+ - git log --all --decorate --oneline --graph (Display Options)
+9. Switch to...
+ - git checkout [COMMIT_HASH] (Commit)
+ - git checkout [BRANCH_NAME] (Branch)
+10. Return to the Latest Commit / Return to Branch main
+ - git checkout main
+11. Reset to a Previous Commit (Return and Make it the Latest One)
+ - git reset --hard [COMMIT_HASH]
+12. Git Tags
+ - git tag -a [TAG_NAME] [COMMIT_HASH] -m "[TAG_DESCRIPTION]" (Tag a Specific Commit)
+ - git tag -a [TAG_NAME] -m "[TAG_DESCRIPTION]" (Tag the Latest Commit)
+13. Branch Commands
+ - git branch [BRANCH_NAME] (Create a New Branch)
+ - git branch (List All Branches in the Repo)
+14. Merge Branches
+ - git merge [BRANCH_NAME] (*main)
+15. Get Updates from the Remote Repo
+ - git pull
+ - git fetch --> git checkout [BRANCH_NAME] --> git merge origin/[BRANCH_NAME]
+________________________________________________________________________________________
+--------------------------------------------
+| Journey from Local Folder to GitHub Repo |
+--------------------------------------------
+1. Create an empty local folder
+2. Create a new repo on GitHub
+3. Initialize an empty Git repo with <git init>
+4. Add Files, then run <git add [FILE_NAME]> to include the file in the next commit
+5. Commit the changes with <git commit -m "[MESSAGE]">
+6. Push Files to GitHub with <git push>
+________________________________________________________________________________________
+---------------------------
+| Branch & Merge Scenario |
+---------------------------
+1. Create a new branch with <git branch [BRANCH_NAME]>
+2. Switch to the new branch with <git checkout [BRANCH_NAME]>
+3. Make Changes, then <git add>, then <git commit>
+4. Switch to main with <git checkout main>
+5. Merge changes <git merge [BRANCH_NAME]>
+6. Push to GitHub with <git push>
